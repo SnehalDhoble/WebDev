@@ -3,25 +3,26 @@
 <head>
 	<title>Image Gallery</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="https://unpkg.com/masonry-layout@4.2.1/dist/masonry.pkgd.min.js">
+	
 </head>
 <body>
-	<nav class="navbar navbar-inverse" role="navigation">
-	  <div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-nav">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">IMG</a>
+	      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-picture"></span> IMG</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-nav">
+	    <div class="collapse navbar-collapse" id="bs-nav-demo">
 	      <ul class="nav navbar-nav">
 	        <li><a href="#">About</a></li>
 	        <li><a href="#">Contact</a></li>
@@ -35,60 +36,54 @@
 	</nav>
 	<div class="container">
 		<div class="jumbotron">
-			<h1>Cosmos Gallery </h1>
+			<h1> <i class="fa fa-camera-retro"></i> Cosmos Gallery </h1>
 			<p> Welcome to Cosmos! </p>
 		</div>
-		<div class="masonry">
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?auto=format&fit=crop&w=2700&q=80">
-				</div> 
+
+		<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 20 }'>
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?auto=format&fit=crop&w=2700&q=80">
 			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://images.unsplash.com/photo-1504238624541-bca0f332da07?auto=format&fit=crop&w=1100&q=80">
-				</div> 
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1504238624541-bca0f332da07?auto=format&fit=crop&w=1100&q=80">
 			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://images.unsplash.com/uploads/14116941824817ba1f28e/78c8dff1?auto=format&fit=crop&w=2466&q=80">
-				</div> 
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/uploads/14116941824817ba1f28e/78c8dff1?auto=format&fit=crop&w=2466&q=80">
 			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://images.unsplash.com/photo-1473806189829-9641421a59f1?auto=format&fit=crop&w=1650&q=80">
-				</div> 
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1650&q=80">
 			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://images.unsplash.com/photo-1447433819943-74a20887a81e?auto=format&fit=crop&w=1675&q=80">
-				</div> 
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1473806189829-9641421a59f1?auto=format&fit=crop&w=1650&q=80">
 			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?auto=format&fit=crop&w=1633&q=80">
-				</div> 
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1447433819943-74a20887a81e?auto=format&fit=crop&w=1675&q=80">
 			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?auto=format&fit=crop&w=1650&q=80">
-				</div> 
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?auto=format&fit=crop&w=1633&q=80">
 			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1650&q=80">
-				</div> 
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?auto=format&fit=crop&w=1650&q=80">
 			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://images.unsplash.com/photo-1504966981333-1ac8809be1ca?auto=format&fit=crop&w=1650&q=80">
-				</div> 
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1650&q=80">
+			</div>
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1504966981333-1ac8809be1ca?auto=format&fit=crop&w=1650&q=80">
+			</div>
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1451847487946-99830706c22d?auto=format&fit=crop&w=668&q=80">
+			</div>
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1447433693259-c8549e937d62?auto=format&fit=crop&w=2754&q=80">
+			</div>
+			<div class="grid-item thumbnail">
+				<img src="https://images.unsplash.com/photo-1506980372018-114d8d7430ce?auto=format&fit=crop&w=582&q=80">
 			</div>
 		</div>
 	</div>
-	
-	<script type="text/javascript" href="jquery-3.2.1.js"></script>
-	<script src="/path/to/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4.2.1/dist/masonry.pkgd.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
